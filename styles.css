@@ -1,3 +1,6 @@
+body{
+    font-size: 14px;
+}
 #accordion .acc-body{
     height: 0;
     visibility: hidden;
@@ -6,7 +9,7 @@
  #accordion .active .acc-body {
     text-align: center;
     visibility: unset;
-    height: 100px;
+    height: auto;
     padding: 10px;
     -webkit-transition: height 0.5s ease-in-out;
     -moz-transition: height 0.5s ease-in-out;
@@ -15,9 +18,66 @@
     transition: height 0.5s ease-in-out;
  }
  #accordion .acc-header{
-     display: block;
-     background-color: brown;
-     text-align: center;
-     padding: 10px;
-     border: 1px solid black;
+    display: block;
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
  }
+ #accordion .acc-body .employee-name{
+     display: inline;
+     width: 30%;
+     float: left;
+     border: none !important;
+ }
+ #accordion .acc-body select.amount-selector{
+    width: 5%;
+    float: left;
+}
+#accordion .acc-body input.date-selector{
+    width: 10%;
+}
+
+#accordion .acc-body input.submit-btn{
+    width: 10%;
+    float : right;
+    background-color: brown;
+    color: white;
+}
+#accordion .panel.active .acc-body *{
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:767px){
+    #accordion .panel.active .acc-body *{
+        margin: 20px auto;
+    }
+    #accordion .acc-body .employee-name{
+        display: block;
+        width: unset;
+        float: none;
+    }
+    #accordion .acc-body select.amount-selector{
+        display: block;
+        width: unset;
+        float: none;
+   }
+   #accordion .acc-body input.date-selector{
+        display: block;
+        width: unset;
+        float: none;
+   }
+   
+   #accordion .acc-body input.submit-btn{
+        display: block;
+        width: unset;
+        float: none;
+   }
+}
+ 

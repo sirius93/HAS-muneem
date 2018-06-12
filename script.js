@@ -2,7 +2,27 @@ var hasMuneem = (function () {
     function initFirebase(config){
         firebase.initializeApp(config); 
     }
+    function firebaseDatabase(){
+        database.ref('users').once('value').then(function(snapshot) {
+            var users = (snapshot.val() && snapshot.val()) || 'Anonymous';
+            var template = document.getElementById('accordion-render');
+            var accordionList = document.getElementById('accordion');
+            var templateHtml = template.innerHTML;
+            var listHtml = '';
+            for(var user in users){
+                listHtml += templateHtml.replace(/{{employee-name}}/g, users[user].Name);
+                console.log(user,users);
+            }
+            accordionList.innerHTML += listHtml;
+            hasMuneem.initAccordion(document.getElementById('accordion'));
+        });
+    }
 
+    function writeData(){
+        database().ref('users/' + Nandan).set({
+            'money-count' :20
+          });
+    }
     function initAccordion(accordionElem){
         //when panel is clicked, handlePanelClick is called.          
         function handlePanelClick(event){
@@ -10,6 +30,13 @@ var hasMuneem = (function () {
         }
         //Hide currentPanel and show new panel.  
         
+        var allPanelElems = accordionElem.querySelectorAll(".panel");
+        for (var i = 0, len = allPanelElems.length; i < len; i++){
+                allPanelElems[i].addEventListener("click", handlePanelClick);
+        }
+        //By Default Show first panel
+        showPanel(allPanelElems[0]);
+
         function showPanel(panel){
             //Hide current one. First time it will be null. 
             var expandedPanel = accordionElem.querySelector(".active");
@@ -17,20 +44,23 @@ var hasMuneem = (function () {
                 expandedPanel.classList.remove("active");
             }
             //Show new one
-            panel.classList.add("active");
+            if(panel){
+                panel.classList.add("active");
+            }
         }
-        var allPanelElems = accordionElem.querySelectorAll(".panel");
-        for (var i = 0, len = allPanelElems.length; i < len; i++){
-                allPanelElems[i].addEventListener("click", handlePanelClick);
-        }
-        //By Default Show first panel
-        showPanel(allPanelElems[0])
     }
-    
+
     return {
         initFirebase:initFirebase,
-        initAccordion:initAccordion
+        initAccordion:initAccordion,
+        firebaseData:firebaseDatabase
     }; 
 })(); 
 hasMuneem.initFirebase(config);
-hasMuneem.initAccordion(document.getElementById("accordion"));
+var database = firebase.database();
+hasMuneem.firebaseData();
+
+function submitData(){
+    this.event.preventDefault();
+    console.log(this)
+}

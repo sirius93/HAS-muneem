@@ -1,0 +1,16 @@
+
+{
+"users" :       
+    {
+        "Nandan":{
+        "Name":"Nandan Kumar",
+        "email":"nandan.1345@gmail.com",
+        "money-count":0
+        },
+        "Abhay": {
+        "Name":"Abhay singh",
+        "email":"abhay.1345@gmail.com",
+        "money-count":0
+        }
+    }
+}
