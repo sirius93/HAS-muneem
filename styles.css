@@ -80,4 +80,18 @@ body{
         float: none;
    }
 }
- 
+#login-form {
+    margin: 20px auto;
+    text-align: center;
+    width: unset;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#login-form input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;  
+    display: block;
+    margin: 20px auto;
+    width: 85%;
+} 

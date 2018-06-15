@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helios Muneem | An app to track luxury funds</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="accordion">
+    </div>
+<script id="accordion-render" type="text/template"> 
+    <div class="panel"> <!-- first panel -->
+        <div class="acc-header">{{employee-name}}</div>
+        <div class="acc-body">
+            <form id="amount-submit-form-{{employee-id}}" name="{{employee-id}}" data-moneycount="{{moneyCount}}">
+                <div class="employee-name"> {{employee-name}} </div>
+                <div class="old-money-count">Amount due : {{moneyCount}}</div>
+                <select class="amount-selector" required>
+                    <option value="20">Rs: 20</option>
+                    <option value="50">Rs: 50</option>
+                </select>
+                <!-- <input class="date-selector" type="date" required> -->
+                <input type="button" value="Add"  onclick="submitData(this)" class="submit-btn">
+            </form>
+        </div>
+    </div>  
+</script> 
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="./firebase-config.js"></script>         
+<script src="./script.js"></script>           
+</body>
+</html>
