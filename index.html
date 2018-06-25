@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
+        <div id='loadingDiv'>
+                <img src='./assets/images/loader.gif'/>
+        </div>
+        <header class="helios-header">
+            <a href="javascript:void(0)" class="menu-icon">menu icon</a>
+            <div class="header-logo" >
+                Helios Muneem
+            </div>           
+        </header>  
         <form id="login-form" name="login-form">
-            <input type="email" id="login-email" class="email-login" required>    
-            <input type="password" id="login-password" class="password-login" required>    
-            <input type="button" value="Login"  onclick="loginUser(this)" class="submit-btn">
+            <input type="email" id="login-email" class="email-login" placeholder="Enter Your Email" required>    
+            <input type="password" id="login-password" placeholder="Enter Your password" class="password-login" required>    
+            <input type="button" value="Login" class="login-btn">
         </form>
         <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
         <script src="./firebase-config.js"></script>         

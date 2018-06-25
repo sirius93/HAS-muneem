@@ -8,15 +8,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_DupwU6kxOzhNA0DRyxAx5");
+    })();
+  </script>
 </head>
 <body>
+    <div id='loadingDiv'>
+            <img src='./assets/images/loader.gif'/>
+    </div>
+    <header class="helios-header">
+        <a href="javascript:void(0)" class="menu-icon border-icon">menu icon</a>
+        <div class="header-logo" >
+            Helios Muneem
+        </div> 
+        <div class="overlay"></div>
+        <nav class="nav-bar-container">
+            <div class="nav-bar">
+                <ul>
+                    <li>
+                        <a onclick="logOut()" href="javascript:void(0)">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>          
+    </header> 
     <div id="accordion">
     </div>
 <script id="accordion-render" type="text/template"> 
     <div class="panel"> <!-- first panel -->
         <div class="acc-header">{{employee-name}}</div>
         <div class="acc-body">
-            <form id="amount-submit-form-{{employee-id}}" name="{{employee-id}}" data-moneycount="{{moneyCount}}">
+            <form id="amount-submit-form-{{employee-id}}" name="{{employee-id}}" data-moneycount="{{moneyCount}}" data-email="{{emailId}}">
                 <div class="employee-name"> {{employee-name}} </div>
                 <div class="old-money-count">Amount due : {{moneyCount}}</div>
                 <select class="amount-selector" required>
@@ -24,7 +49,7 @@
                     <option value="50">Rs: 50</option>
                 </select>
                 <!-- <input class="date-selector" type="date" required> -->
-                <input type="button" value="Add"  onclick="submitData(this)" class="submit-btn">
+                <input type="button" value="Add amount"  class="submit-btn">
             </form>
         </div>
     </div>  

@@ -3,20 +3,22 @@
 "users" :       
     {
         "Nandan":{
-        "Name":"Nandan Kumar",
-        "email":"nandan.1345@gmail.com",
-        "moneyCount":0,
-        "lastDate":"12" 
+            "Name":"Nandan Kumar",
+            "email":"nandan.1345@gmail.com",
+            "moneyCount":0,
+            "lastDate":"12" 
         },
         "Abhay": {
-        "Name":"Abhay singh",
-        "email":"abhay.1345@gmail.com",
-        "moneyCount":0,
-        "lastDate":"12"
+            "Name":"Abhay singh",
+            "email":"abhay.1345@gmail.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "Avinash": {
+            "Name":"Avinsh Singh Gaur",
+            "email":"agaur4@sapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
         }
-    },
-"logger" :
-    {
-        
-    }    
+    }   
 }
