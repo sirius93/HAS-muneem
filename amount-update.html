@@ -8,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="./styles.css">
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("user_DupwU6kxOzhNA0DRyxAx5");
-    })();
-  </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_DupwU6kxOzhNA0DRyxAx5");
+   })();
+</script>
 </head>
 <body>
     <div id='loadingDiv'>
@@ -41,16 +41,25 @@
     <div class="panel"> <!-- first panel -->
         <div class="acc-header">{{employee-name}}</div>
         <div class="acc-body">
-            <form id="amount-submit-form-{{employee-id}}" name="{{employee-id}}" data-moneycount="{{moneyCount}}" data-email="{{emailId}}">
+            <div class="employee-details">
                 <div class="employee-name"> {{employee-name}} </div>
                 <div class="old-money-count">Amount due : {{moneyCount}}</div>
-                <select class="amount-selector" required>
-                    <option value="20">Rs: 20</option>
-                    <option value="50">Rs: 50</option>
-                </select>
-                <!-- <input class="date-selector" type="date" required> -->
-                <input type="button" value="Add amount"  class="submit-btn">
-            </form>
+            </div>
+            <div class="form-container">
+                <form id="amount-submit-form-{{employee-id}}" name="{{employee-id}}" data-moneycount="{{moneyCount}}" data-email="{{emailId}}"> 
+                    <select class="amount-selector" required>
+                        <option value="20">Rs: 20</option>
+                        <option value="50">Rs: 50</option>
+                    </select>
+                    <select class="reason-selector" required>
+                        <option value="late arrival with information">Late Arrival with information</option>
+                        <option value="Late Arrival without information">Late Arrival without information</option>
+                        <option value="Attending call or phone ring during LLP">Attending call or phone ring during LLP</option>
+                    </select>
+                    <!-- <input class="date-selector" type="date" required> -->
+                    <input type="button" value="Add amount"  class="submit-btn">
+                </form>
+            </div>
         </div>
     </div>  
 </script> 

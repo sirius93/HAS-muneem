@@ -2,23 +2,47 @@
 {
 "users" :       
     {
-        "Nandan":{
+        "Nandan": {
             "Name":"Nandan Kumar",
-            "email":"nandan.1345@gmail.com",
+            "email":"nandan.kumar@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12" 
         },
-        "Abhay": {
-            "Name":"Abhay singh",
-            "email":"abhay.1345@gmail.com",
+        "Amrit": {
+            "Name":"Amrit Sharma",
+            "email":"amrit.sharma@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "Avinash": {
-            "Name":"Avinsh Singh Gaur",
-            "email":"agaur4@sapient.com",
+        "Pooja": {
+            "Name":"Pooja Chavan",
+            "email":"pooja.chavan2@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
-        }
+        },
+        "Jayapal": {
+            "Name":"Jayapal Surendra Babu",
+            "email":"jays@publicisgroupe.net",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "Shailendra": {
+            "Name":"Shailendra K",
+            "email":"shailendra.karki@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "hemalatha": {
+            "Name":"Hemalatha Chockalingam",
+            "email":"hemalatha.chockalingam@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "salma": {
+            "Name":"Salma Banu",
+            "email":"salma.banu@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        }        
     }   
 }
