@@ -82,16 +82,17 @@ var hasMuneem = (function () {
         var oldCount = targetForm.dataset.moneycount;
         var email = targetForm.dataset.email;
         var fineamt = targetForm.elements[0].value;
+        var nameofemployee = targetForm.dataset.empname;
         var formDataObject = {};
         var newCount = parseInt(oldCount) + parseInt(fineamt);
         formDataObject['moneyCount'] = newCount;
         formDataObject['lastDate'] = new Date();
-        hasMuneem.writeData(formDataObject,targerUser,fineamt,email);
+        hasMuneem.writeData(formDataObject,targerUser,fineamt,email,nameofemployee);
     }
-    function writeData(data,user,fineamt,email){
+    function writeData(data,user,fineamt,email,empname){
         document.getElementById('loadingDiv').style.display = "block";
         emailJSdata = {
-            to_name : user,
+            to_name : empname,
             to_email : email,
             fine_amt : fineamt,
             updated_amt : data.moneyCount,

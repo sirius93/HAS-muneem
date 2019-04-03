@@ -2,47 +2,84 @@
 {
 "users" :       
     {
-        "Nandan": {
+        "nankumar3": {
             "Name":"Nandan Kumar",
             "email":"nandan.kumar@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12" 
         },
-        "Amrit": {
+        "amrsharm": {
             "Name":"Amrit Sharma",
             "email":"amrit.sharma@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "Pooja": {
+        "poochava1": {
             "Name":"Pooja Chavan",
             "email":"pooja.chavan2@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "Jayapal": {
+        "jays": {
             "Name":"Jayapal Surendra Babu",
             "email":"jays@publicisgroupe.net",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "Shailendra": {
+        "shakarki": {
             "Name":"Shailendra K",
             "email":"shailendra.karki@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "hemalatha": {
-            "Name":"Hemalatha Chockalingam",
-            "email":"hemalatha.chockalingam@publicissapient.com",
+        "anochipl": {
+            "Name":"Anoop Chiplunkar",
+            "email":"anoop.chiplunkar@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
         },
-        "salma": {
-            "Name":"Salma Banu",
-            "email":"salma.banu@publicissapient.com",
+        "nagsudha": {
+            "Name":"Sudhakar N",
+            "email":"sudhakar.nagooru@publicissapient.com",
             "moneyCount":0,
             "lastDate":"12"
-        }        
+        },
+        "prakumar36": {
+            "Name":"G Pravinkumar",
+            "email":"pravin.kumar@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "ashahuja": {
+            "Name":"Ashish Ahuja",
+            "email":"ashish.ahuja@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "parsurul": {
+            "Name":"Parthiban Surulinathan",
+            "email":"parthiban.surulinathan@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "vingupta4": {
+            "Name":"Vinita Gupta",
+            "email":"vinita.gupta@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "ashsharm12": {
+            "Name":"Ashish Sharma",
+            "email":"ashish.sharma12@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        },
+        "subkumar4": {
+            "Name":"Subham Kumar",
+            "email":"subham.kumar@publicissapient.com",
+            "moneyCount":0,
+            "lastDate":"12"
+        }
+          
     }   
 }
